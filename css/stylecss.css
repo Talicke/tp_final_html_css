@@ -7,6 +7,7 @@
         scale: 1.5;
     }
 }
+
 @keyframes grossirright {
     from{
         translate: 0px;
@@ -17,40 +18,9 @@
     }
 }
 
-@keyframes grossirmilieu {
-    from{
-        scale: 1;
-    }to{
-        transform: rotate(360deg);
-        scale: 1.8;
-    }
-}
-
-#section_html, #section_css{
-    flex-direction: column;
-    display: flex;
-}
 h1{
     text-align: center;
     margin-bottom: 5em;
-}
-
-h2{
-    align-self: center;
-}
-div{
-    align-self: center;
-}
-
-article img{
-    width: 20em;
-    height: auto;
-    align-self: center;
-}
-
-section{
-    display: flex;
-    flex-direction: column;
 }
 
 article{
@@ -66,25 +36,40 @@ article{
     background: lightgrey;
 }
 
-#section_html article:nth-child(odd){
+article img{
+    max-width: 35em;
+    max-height: 5em;
+    height: auto;
+    margin: 10px;
+}
+
+#section_css{
+    flex-direction: column;
+    display: flex;
+}
+
+h3{
+    align-self: center;
+}
+
+p, ul, li{
+    align-self: flex-start;
+}
+
+#section_css article:nth-child(odd){
     align-self: flex-end;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-#section_html article:hover{
+#section_css article:hover{
     animation: grossirleft 2s;
     animation-fill-mode: forwards;
 
 }
 
-#section_html article:nth-child(odd):hover{
+#section_css article:nth-child(odd):hover{
     animation: grossirright 2s;
-    animation-fill-mode: forwards;
-}
-
-figure:hover{
-    animation: grossirmilieu 2s;
     animation-fill-mode: forwards;
 }
