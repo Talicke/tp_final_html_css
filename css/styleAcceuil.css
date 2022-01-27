@@ -1,24 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-body {
+section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto;
     grid-gap: 20px;
 }
 
-
-#modiful a {
-    color: #fff;
-    position: absolute;
-    top: 38px;
-}
-
-#modiflogo{
-    position: absolute;
-    height: 6rem;
-    left: 10rem;
-    top: 24px;
-}
 
 article {
     align-self: center;
@@ -27,7 +14,7 @@ article {
     border: 1px solid black;
     background-color: rgb(236, 235, 235);
     padding: 10px;
-    height: 350px;
+    height: 370px;
     width: 550px;
     box-shadow: black 3px 3px 5px 0px inset;
     border-radius: 10px;
@@ -35,11 +22,6 @@ article {
 
 article img {
     margin: auto;
-}
-
-a, a:visited {
-    color: black;
-    text-decoration: none;
 }
 
 #article1{

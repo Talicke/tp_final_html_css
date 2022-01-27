@@ -6,21 +6,38 @@ body{
 nav{
     background-color: rgb(88, 86, 86);
     height: 55px;
+    width: 100%;
+}
+
+#modiful a {
+    color: #fff;
+    position: absolute;
+    top: 38px;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
 }
 
 header {
-    height: auto;
-    width: 100em;
-    grid-column: 1 / span 3;
-    grid-row: 1;
     background-repeat: no-repeat;
     background-size:auto;
+    display: flex;
     flex-wrap: wrap;
+}
+
+#modiflogo{
+    position: absolute;
+    height: 6rem;
+    left: 10rem;
+    top: 24px;
 }
 
 #banner{
     height: auto;
-    width: 100em;
+    width: 100%;
+    text-align: center;
 }
 
 #modiful{
@@ -33,4 +50,10 @@ header {
 }
 li{
     width: 250px;
+}
+
+footer{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
 }
