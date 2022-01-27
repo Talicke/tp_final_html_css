@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,53,68,1) 0%, rgba(237,241,242,1) 100%);
+}
+
+header {
+    height: auto;
+    width: 100em;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    background-repeat: no-repeat;
+    background-size:auto;
+    flex-wrap: wrap;
+}
+
+#banner{
+    height: auto;
+    width: 100em;
+}
+
+#modiful{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    list-style: none;
+    height: auto;
+    justify-content: center;
+}
+li{
+    width: 250px;
+}
+
+#modiful a {
+    color: #fff;
+    position: absolute;
+    top: 38px;
+}
+
+#modiflogo{
+    position: absolute;
+    height: 6rem;
+    left: 10rem;
+    top: 24px;
+}
+
+nav{
+    background-color: rgb(88, 86, 86);
+    height: 55px;
+}
+
+article {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(236, 235, 235);
+    padding: 10px;
+    height: 350px;
+    width: 550px;
+    box-shadow: black 3px 3px 5px 0px inset;
+    border-radius: 10px;
+}
+
+article img {
+    margin: auto;
+}
+
+a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#article1{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.image1{
+    height: 250px;
+}
+.image2{
+    height: 250px;
+}
+.image3{
+    height: 250px;
+}
+
+
+#article2{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#article3{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+h1{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    border: 2px solid black;
+    background-color: rgb(240, 240, 248);
+    border-radius: 10px;
+    
+}
+
