@@ -1,0 +1,36 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,53,68,1) 0%, rgba(237,241,242,1) 100%);
+}
+
+nav{
+    background-color: rgb(88, 86, 86);
+    height: 55px;
+}
+
+header {
+    height: auto;
+    width: 100em;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    background-repeat: no-repeat;
+    background-size:auto;
+    flex-wrap: wrap;
+}
+
+#banner{
+    height: auto;
+    width: 100em;
+}
+
+#modiful{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    list-style: none;
+    height: auto;
+    justify-content: center;
+}
+li{
+    width: 250px;
+}

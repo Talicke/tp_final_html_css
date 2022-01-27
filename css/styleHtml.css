@@ -1,0 +1,100 @@
+body{
+    flex-direction: column;
+    display: flex;
+}
+h1{
+    align-self: center;
+    margin-bottom: 5em;
+}
+h2{
+    align-self: center;
+}
+div{
+    align-self: center;
+}
+
+
+img{
+    width: 20em;
+    height: auto;
+    align-self: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+
+}
+article:nth-child(odd){
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+
+@keyframes grossirleft {
+    from{
+        translate: 0px;
+        scale: 1;
+        
+    }
+    to{
+        translate: 20em;
+        scale: 1.5;
+        
+    }
+}
+@keyframes grossirright {
+    from{
+        translate: 0px;
+        scale: 1;
+        
+    }
+    to{
+        translate: -20em;
+        scale: 1.5;
+        
+    }
+}
+
+article{
+    width: 50em;
+    padding: 2em;
+    margin-bottom: 11em;
+    margin-left: 5em;
+    margin-right: 5em;
+    border: solid black;
+    border-radius: 20px 20px;
+}
+
+article:nth-child(even):hover{
+    animation: grossirleft 2s;
+    animation-fill-mode: forwards;
+
+}
+
+article:nth-child(odd):hover{
+    animation: grossirright 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grossirmilieu {
+    from{
+        
+        scale: 1;
+        
+    }
+    to{
+        transform: rotate(360deg);
+        scale: 1.8;
+        
+    }
+}
+
+figure:hover{
+    animation: grossirmilieu 2s;
+    animation-fill-mode: forwards;
+}

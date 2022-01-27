@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleHtml.css">
+    <title>Adrar-css</title>
+</head>
+<body>
+    <header>
+        <section>
+            <img id="modiflogo" src="img/logo.png" alt="logo">
+            <nav>
+                <ul id="modiful">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <img src="img/slide61home.jpg" alt="banner">
+        </header>
+
+        <main>
+            <article>
+                <h3>Le css c'est quoi ?</h3>
+                <p>
+                    Le css est un language interprété par le navigateur qui sert à <em>mettre en forme</em> une page web.<br/>
+                    Le navigateur va "lire" les instructions et appliquer notre "style", une <em>esthétique</em>, à notre page.<br/>
+                    Avec le CSS, nous pouvons agir par exemple sur:
+                    <ul>
+                        <li>Les couleurs</li>
+                        <li>Les tailles</li>
+                        <li>Le placement des éléments sur la page</li>
+                        <li>Les polices de caractères (font)</li>
+                        <li>Etc...</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h3>Ce qu'il est possible</h3>
+                <p>Avant toute chose, où place t'on notre code CSS ?</p>
+                <ul>
+                    <li>Dans une balise directement grâce à l'attribut "style":</li>
+                    <img src="img/Style_dans_la_balise_code.PNG" alt="un exemple de balise style"><img src="img/Style_dans_la_balise_ex.PNG" alt="un texte rouge">
+                    <li>Dans le "head" grâce à une balise "style":</li>
+                    <img src="img/Style_dans_le_head_code.PNG" alt="un exemple de style dans le head"><img src="img/Style_dans_le_head_ex.PNG" alt="un texte bleu">
+                    <li>Dans un fichier ".css" à part:</li>
+                    <img src="img/Style_dans_le_fichierCSS_code.PNG" alt="un exemple de balise link">
+                    <img src="img/Style_dans_le_fichierCSS_code_02.PNG" alt="un sélecteur dans le css"><img src="img/Style_dans_le_fichierCSS_ex.PNG" alt="un texte rose">
+                </ul>
+            </article>
+
+            <article>
+                <h3>Bonne pratique</h3>
+                <ul>
+                    <li>Que choisir ?</li>
+                    <p>dans un fichier à part ! car cela à de noubreaux avantages:</p>
+                <ul>
+                    <li>permet une maintenance du code plus simple</li>
+                    <li>permet d'utiliser le même fichier sur plusieur pages HTML</li>
+                </ul>
+                <li>Comment ça marche ?</li>
+                <p>il suffit de lier notre page CSS avec notre page HTML grâce à la balise "link" dans le "head"</p>
+                <img src="img/Style_dans_le_fichierCSS_code.PNG" alt="une exemple de balise link">
+                </ul>
+            </article>
+
+            <article>
+                <h3>bonne pratique</h3>
+                <p>regardons notre code en détails:</p>
+                <img src="img/sélécteur_détails.PNG" alt="un sélécteur coloriser">
+                <ul>
+                <p>nous avons:</p>
+                    <li>En rouge:<em>Le sélecteur</em> => Permet de choisir sur qui s'applique le style</li>
+                    <li>En vert:<em>Les acoolades</em> => Délimite les propriétés pour un élément</li>
+                    <li>En bleu:<em>La propriété</em> =>Les effets graphique qui vont être appliqués</li>
+                    <li>En jaune:<em>La valeur</em> =>La valeur (un nombre, une couleur, ...)</li>
+                    <li>En rose:<em>Le séparateur</em> => Le point vigule";" sert à séparer les propriétés entre elles</li>
+                </ul>
+                <p>Ici, nous appliquons donc la couleurs "magenta" au texte de nos balises "p"</p>
+            </article>
+
+            <article>
+                <h3>Commentaires</h3>
+                <p>
+                    Comme pour le HTML, nous pouvons mettre des commentaires dans code qui ne seront <em>pas interprétés par le navigateur</em>, et qui <em>n'apparaitrons pas sur la page</em>.<br/>
+                    Attention, tout ce que vous écrivez en commentaire pourra aussi <em>être lu par n'importe qui !</em><br/>
+                    Pour écrire un commentaire, il faut mettre entre "/*" ouvrante et "*/" fermante comme ceci:
+                </p>
+                <img src="img/commentaire_css.PNG">
+            </article>
+
+            <article>
+                <h3>Cascade & Héritage</h3>
+                <p>Mais pourquoi "cascade" dans Cascading Style Sheet ?</p>
+                <ul>
+                    <li>Les feuilles de style sont exécutées dans l'ordre de délcaration:</li>
+                    <img src="img/plusieurs_fichers_css.PNG" alt="un exemple de link de plusieurs fichier css">
+                    <li>Les délarations sont aussi exécutées dans l'ordre d'écriture:</li>
+                    <img src="img/cascade_sélécteur.PNG" alt="plusieur sélécteur dans un css">
+                    <li>L'instuction la plus précise sera celle qui sera prioritaire:</li>
+                    <img src="img/Cascade_précise_html.PNG" alt="un bout de code HTML"><img src="img/Cascade_précise_css.PNG" alt="un bout de code CSS"><img src="img/Cascade_précise_ex.PNG" alt="un texte rouge">
+                    <li>Certaines propriété hérite du parent vers l'enfant:</li>
+                    <img src="img/heritage_css.PNG" alt="un bout de code css">
+                    <img src="img/heritage_html.PNG" alt="un bout de code html"><img src="img/heritage_ex.PNG" alt="un texte rose">
+                </ul>
+            </article>
+
+            <article>
+                <h3>Vocabulaire & Résumé</h3>
+                <ul>
+                    <li>On déclare de préférence notre CSS dans un fichier séparé que l'on lie à notre page grâce à la balise "link" qui se situe dans le "head" de la page.</li>
+                    <li>Notre fichier CSS contient des <em>règles CSS</em></li>
+                    <li>CHaque règles CSS contient <em>Une ou plusieurs déclarations</em> qui sont composées <em>D'un propriété et de sa valeur</em></li>
+                    <li>On utilise le " : " pour séparer la proprété de sa valeur</li>
+                    <li>On utilise le " ; " pour séparer les déclarations entre elles</li>
+                    <li>On utilise les accolade " {} " pour séparer les régles entre elles</li>
+                </ul>
+                <img src="img/exemple_css.PNG" alt="un exemple de css">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>2022 © ADRAR Formation. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
